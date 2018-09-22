@@ -1,0 +1,10 @@
+
+<!-- We need to create an erb file in the views directory, new.erb, with a form that POSTs to a controller action, /posts-->
+<!-- When the form on new.erb is submitted, the action, pointing to /posts, will trigger a render of an index.erb file automatically. -->
+ <h1>Add a post</h1>
+
+<form action="/posts" method="post">
+<p><label for="name">Name: </label><input type="text" name="name" value="Enter post name" id="name" /></p>
+<p><label for="content" style="vertical-align: top;">Content: </label><textarea name="content" value="Enter post content" id="content" rows=8 cols=40></textarea></p>
+<input type="submit" value="Submit" id="submit">
+</form>
